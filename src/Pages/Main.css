@@ -12,7 +12,7 @@ body, html {
   align-items: flex-start;
   margin-top: 80px; /* Below the navbar */
   background-color: black; /* Background color */
-  height: calc(100vh - 60px); /* Adjust height to fill the remaining viewport */
+  height: calc(100vh - 80px); /* Adjust height to fill the remaining viewport */
   width: 100%; /* Ensure it spans the full width */
 }
 
@@ -20,35 +20,37 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 60px); /* Same height for both containers */
-
+  height: calc(100vh - 80px); /* Same height for both containers */
 }
 
 .left-img, .left-img-indented {
   object-fit: contain;
-  width: 100%;
-  height: auto;
+  width: 85%; /* Set width to 85% of its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0px;
+  border-radius: 15px;
+
 }
 
 /* Move the top image up */
 .left-container .left-img:first-child {
-  margin-top: -40px;
-  margin-bottom: 5px;
-  margin-left: 10px;
+  margin-top: -20px;
+  margin-left: 20px;
+  margin-bottom: -55px;
 }
 
 /* Style for the indented image */
 .left-img-indented {
-  margin-left: 20px;
+  margin-left: 40px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 /* Move the bottom image down */
 .left-container .left-img:last-child {
-  margin-top: 5px;
+  margin-top: -55px;
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .right-container {
@@ -60,7 +62,8 @@ body, html {
 }
 
 .right-img {
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh - 80px);
   object-fit: contain; /* Adjust to prevent image distortion */
   margin: 20px;
+  border-radius: 15px;
 }
