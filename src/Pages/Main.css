@@ -1,3 +1,32 @@
+/* Responsive design adjustments */
+
+/* Use media queries to adjust layout for different screen sizes */
+@media (max-width: 768px) { /* Example for tablets and smaller devices */
+  .left-container, .right-container {
+    flex-direction: row; /* Stack images horizontally on smaller screens */
+    align-items: center;
+  }
+
+  .left-img, .left-img-indented, .right-img {
+    width: 50%; /* Adjust image width on smaller screens */
+    margin: 10px 0; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) { /* Example for mobile devices */
+  .left-container, .right-container {
+    flex-direction: column; /* Stack images vertically again for very small screens */
+  }
+
+  .left-img, .left-img-indented, .right-img {
+    width: 80%; /* Increase image width on very small screens */
+  }
+
+  .left-img-indented {
+    margin-left: 20px; /* Adjust indentation for mobile */
+  }
+}
+
 /* Reset default margins and padding */
 body, html {
   margin: 0;
@@ -23,13 +52,33 @@ body, html {
   height: calc(100vh - 80px); /* Same height for both containers */
 }
 
-.left-img, .left-img-indented {
+.left-img {
   object-fit: contain;
   width: 85%; /* Set width to 85% of its container */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 0px;
   border-radius: 15px;
   box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow */
+}
+
+.left-img:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  z-index: 1; /* Ensure the image is above other elements */
+}
+
+.left-img-indented {
+  object-fit: contain;
+  width: 85%; /* Set width to 85% of its container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow */
+  margin-left: 60px;
+}
+
+.left-img-indented:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  z-index: 1; /* Ensure the image is above other elements */
 }
 
 /* Move the top image up */
@@ -39,19 +88,11 @@ body, html {
   margin-bottom: -30px;
 }
 
-/* Style for the indented image */
-.left-img-indented {
-  margin-left: 60px;
-  margin-top: -30px;
-  margin-bottom: -30px;
-}
-
 /* Move the bottom image down and apply box shadow */
 .left-container .left-img:last-child {
   margin-top: -30px;
   margin-bottom: 50px;
   margin-left: 20px;
-  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow for the bottom image */
 }
 
 .right-container {
@@ -67,5 +108,10 @@ body, html {
   object-fit: contain; /* Adjust to prevent image distortion */
   margin: 20px;
   border-radius: 15px;
-  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow for right-img */
+  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow */
+}
+
+.right-img:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  z-index: 1; /* Ensure the image is above other elements */
 }
