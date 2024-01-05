@@ -1,18 +1,66 @@
-.main-container {
-  min-height: calc(100vh - 60px); /* Subtract the height of the navbar */
-  background-size: contain; /* Adjust this based on your preference */
-  background-position: center;
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px; /* Space for the navbar */
-  background-color: black;
+/* Reset default margins and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Set background color for the whole page */
 }
 
-.main-container h1 {
-  font-size: 3rem;
-  color: black; /* Ensure visibility against the background */
-  text-align: center;
-  z-index: 1;
+/* Set the background color of the main container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 80px; /* Below the navbar */
+  background-color: black; /* Background color */
+  height: calc(100vh - 60px); /* Adjust height to fill the remaining viewport */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.left-container, .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 60px); /* Same height for both containers */
+
+}
+
+.left-img, .left-img-indented {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+/* Move the top image up */
+.left-container .left-img:first-child {
+  margin-top: -40px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+/* Style for the indented image */
+.left-img-indented {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Move the bottom image down */
+.left-container .left-img:last-child {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the image vertically */
+  padding-left: 20px; /* Optional spacing */
+}
+
+.right-img {
+  max-height: calc(100vh - 60px);
+  object-fit: contain; /* Adjust to prevent image distortion */
+  margin: 20px;
 }
