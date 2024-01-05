@@ -1,0 +1,27 @@
+/* About.css */
+
+.about-container {
+    background-color: black; /* Adjust the background color as needed */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif; /* Adjust the font as needed */
+  }
+  
+  .video-container {
+    width: 100%;
+    /* Removed max-height to allow video to expand as needed */
+    overflow: hidden; /* In case the video is too tall */
+  }
+  
+  .about-video {
+    width: 80%;
+    height: auto;
+    object-fit: contain; /* Changed from cover to contain */
+  }
+  
+  .about-content {
+    margin: 20px;
+    /* Add more styling for your about content here */
+  }
+  
+  /* You can add more specific styling and responsive design adjustments as needed */
+  

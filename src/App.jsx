@@ -1,14 +1,21 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Pages/Main';
-import Navbar from './Components/Navbar'; // Import the Navbar component
+import About from './Pages/About';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar /> {/* Include the Navbar */}
-      <Main />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<About />} /> {/* About as the main page */}
+          <Route path="/home" element={<Main />} /> {/* Main as the secondary page */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
