@@ -1,23 +1,32 @@
 import React from 'react';
-import './About.css'; // Make sure to create a corresponding About.css file
-import Footer from '../Components/Footer'; // Assuming you use the same Footer component
-import video from '../Videos/animation.mp4'; // Import the video
+import './About.css';
+import Footer from '../Components/Footer';
+import video from '../Videos/animation.mp4';
 import photo from '../Images/MainPageImg.jpg';
+import newImage from '../Images/4.jpg'; // Import the new image
 
 const About = () => {
   return (
     <div className="about-container">
-      {/* Photo on the left */}
-      <div className="photo-container">
-        <img src={photo} alt="About Us" /> {/* Display the imported photo */}
+      {/* Container for side-by-side photo and video */}
+      <div className="media-container">
+        {/* Photo on the left */}
+        <div className="photo-container">
+          <img src={photo} alt="About Us" />
+        </div>
+
+        {/* Video on the right */}
+        <div className="video-container">
+          <video className="about-video" autoPlay loop muted>
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
-      {/* Video on the right */}
-      <div className="video-container">
-        <video className="about-video" autoPlay loop muted>
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      {/* New image container */}
+      <div className="new-image-container">
+        <img src={newImage} alt="New Image" />
       </div>
 
       {/* Footer */}

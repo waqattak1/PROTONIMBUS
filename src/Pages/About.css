@@ -1,32 +1,47 @@
 /* About.css */
 
 .about-container {
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center the items horizontally */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
   align-items: center; /* Center the items vertically */
-  margin-top: 30px;
   background-color: black; /* Background color */
   color: white; /* Text color */
-  font-family: Arial, sans-serif; /* Font style */
   padding: 20px; /* Padding around the container */
 }
 
+.media-container {
+  display: flex; /* Side-by-side layout for photo and video */
+  width: 100%; /* Full width for the media container */
+  justify-content: space-around; /* Evenly space the child elements */
+}
+
 .photo-container, .video-container {
-  flex: 1; /* Each container takes up equal space */
+  width: 50%; /* Half of the media container's width */
   margin: 10px; /* Margin around each container */
 }
 
 .photo-container img, .video-container video {
-  width: 100%; /* Make the photo and video take full width of their containers */
-  height: auto; /* Adjust height automatically to maintain aspect ratio */
-  object-fit: contain; /* Ensures content is fully visible */
+  width: 100%; /* Full width of their respective containers */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
+}
+
+.new-image-container {
+  width: 100%; /* Full width for the new image container */
+  margin-top: 20px; /* Space above the new image */
+}
+
+.new-image-container img {
+  width: 80%; /* Full width of the container */
+  height: auto; /* Adjust height automatically */
+  object-fit: contain; /* Ensures full image is visible */
 }
 
 /* Styles for the footer can be added here, if necessary */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .about-container {
+  .media-container {
     flex-direction: column; /* Stack photo and video vertically on smaller screens */
   }
 }
