@@ -11,8 +11,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<About />} /> {/* About as the main page */}
-          <Route path="/home" element={<Main />} /> {/* Main as the secondary page */}
+          <Route path="/" element={<Main />} /> {/* About as the main page */}
+          <Route path="/home" element={<About />} /> {/* Main as the secondary page */}
         </Routes>
       </div>
     </Router>
