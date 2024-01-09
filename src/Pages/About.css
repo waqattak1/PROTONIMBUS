@@ -8,10 +8,15 @@
   flex-direction: column; /* Arrange children in a column */
   align-items: center; /* Center the items vertically */
   background-color: black; /* Background color */
-  color: white; /* Text color */
+  color: yellow; /* Text color */
   padding: 20px; /* Padding around the container */
   margin-top: 35px;
   animation: fadeIn 1.5s ease-in; /* Apply the fade-in animation */
+  font-style: italic;
+  }
+
+.Title {
+  margin-bottom: 20px;
 }
 
 .media-container {
@@ -40,7 +45,7 @@
 }
 
 .new-image-container {
-  width: 85%; /* Full width for the new image container */
+  width: 75%; /* Full width for the new image container */
   margin-top: 20px; /* Space above the new image */ 
 }
 

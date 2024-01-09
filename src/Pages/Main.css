@@ -45,7 +45,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 80px; /* Below the navbar */
+  margin-top: 45px; /* Below the navbar */
   background-color: black; /* Background color */
   height: calc(100vh - 80px); /* Adjust height to fill the remaining viewport */
   width: 100%; /* Ensure it spans the full width */

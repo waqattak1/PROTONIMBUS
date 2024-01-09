@@ -8,6 +8,12 @@ import newImage from '../Images/4.jpg'; // Import the new image
 const About = () => {
   return (
     <div className="about-container">
+
+      {/*Title*/}
+      <div className="Title">
+        <h1>Help keep the gym clean, without the hassle</h1>
+      </div>
+
       {/* Container for side-by-side photo and video */}
       <div className="media-container">
         {/* Photo on the left */}
