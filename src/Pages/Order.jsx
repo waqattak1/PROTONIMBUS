@@ -9,7 +9,7 @@ const Order = () => {
     <div className="order-container">
       <div className="order-button-container">
         <a href={amazonLink} target="_blank" rel="noopener noreferrer">
-          <button className="order-button">Order Now!</button>
+          <button className="order-button">Order Now</button>
         </a>
       </div>
     </div>
