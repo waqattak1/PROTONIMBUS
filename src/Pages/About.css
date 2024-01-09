@@ -1,29 +1,32 @@
 /* About.css */
 
 .about-container {
-    margin-top:30px;
-    background-color: black; /* Adjust the background color as needed */
-    color: white; /* Text color */
-    font-family: Arial, sans-serif; /* Adjust the font as needed */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  margin-top: 30px;
+  background-color: black; /* Background color */
+  color: white; /* Text color */
+  font-family: Arial, sans-serif; /* Font style */
+  padding: 20px; /* Padding around the container */
+}
+
+.photo-container, .video-container {
+  flex: 1; /* Each container takes up equal space */
+  margin: 10px; /* Margin around each container */
+}
+
+.photo-container img, .video-container video {
+  width: 100%; /* Make the photo and video take full width of their containers */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  object-fit: contain; /* Ensures content is fully visible */
+}
+
+/* Styles for the footer can be added here, if necessary */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack photo and video vertically on smaller screens */
   }
-  
-  .video-container {
-    margin-top: 60px;;
-    width: 100%;
-    /* Removed max-height to allow video to expand as needed */
-    overflow: hidden; /* In case the video is too tall */ 
-  }
-  
-  .about-video {
-    width: 80%;
-    height: auto;
-    object-fit: contain; /* Changed from cover to contain */
-  }
-  
-  .about-content {
-    margin: 20px;
-    /* Add more styling for your about content here */
-  }
-  
-  /* You can add more specific styling and responsive design adjustments as needed */
-  
+}
