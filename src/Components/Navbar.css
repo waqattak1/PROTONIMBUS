@@ -25,7 +25,7 @@
 .nav-links a {
   color: yellow;
   text-decoration: none;
-  margin-right: 20px;
+  margin-left: 100px;
   font-size: 20px;
   padding: 5px; /* Add padding for better visibility of box shadow */
   box-shadow: 0px 0px 0px transparent; /* Initial box shadow */
