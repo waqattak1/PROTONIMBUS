@@ -7,12 +7,6 @@ const Order = () => {
 
   return (
     <div className="order-container">
-      <div className="video-container">
-        <video className="order-video" controls>
-          <source src={orderVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <div className="order-button-container">
         <a href={amazonLink} target="_blank" rel="noopener noreferrer">
           <button className="order-button">Order Now</button>
