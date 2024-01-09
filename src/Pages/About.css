@@ -7,6 +7,7 @@
   background-color: black; /* Background color */
   color: white; /* Text color */
   padding: 20px; /* Padding around the container */
+  margin-top: 15px;
 }
 
 .media-container {
@@ -20,21 +21,23 @@
   margin: 10px; /* Margin around each container */
 }
 
-.photo-container img, .video-container video {
+.photo-container img, .new-image-container img {
   width: 100%; /* Full width of their respective containers */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Prevent distortion */
+  box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7); /* Yellow shadow for images */
+}
+
+.video-container video {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent distortion */
+  box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
 }
 
 .new-image-container {
   width: 100%; /* Full width for the new image container */
-  margin-top: 20px; /* Space above the new image */
-}
-
-.new-image-container img {
-  width: 80%; /* Full width of the container */
-  height: auto; /* Adjust height automatically */
-  object-fit: contain; /* Ensures full image is visible */
+  margin-top: 20px; /* Space above the new image */ 
 }
 
 /* Styles for the footer can be added here, if necessary */
@@ -43,5 +46,9 @@
 @media (max-width: 768px) {
   .media-container {
     flex-direction: column; /* Stack photo and video vertically on smaller screens */
+  }
+
+  .photo-container, .video-container, .new-image-container {
+    width: 100%; /* Full width for each container on smaller screens */
   }
 }

@@ -58,7 +58,7 @@ body, html {
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 0px;
   border-radius: 15px;
-  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow */
+  box-shadow: 0px 20px 25px -5px rgba(255, 255, 0, 0.7); /* White shadow */
 }
 
 .left-img:hover {
@@ -72,7 +72,7 @@ body, html {
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 0px;
   border-radius: 15px;
-  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow */
+  box-shadow: 0px 20px 25px -5px rgba(255, 255, 0, 0.7); /* White shadow */
   margin-left: 60px;
 }
 
@@ -108,7 +108,7 @@ body, html {
   object-fit: contain; /* Adjust to prevent image distortion */
   margin: 20px;
   border-radius: 15px;
-  box-shadow: 0px 20px 25px -5px rgba(255, 255, 255, 0.6); /* White shadow */
+  box-shadow: 0px 20px 25px -5px rgba(255, 255, 0, 0.7); /* White shadow */
 }
 
 .right-img:hover {
