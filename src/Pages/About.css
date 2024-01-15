@@ -1,3 +1,5 @@
+/* About.css */
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -5,59 +7,103 @@
 
 .about-container {
   display: flex;
-  flex-direction: column; /* Arrange children in a column */
-  align-items: center; /* Center the items vertically */
-  background-color: black; /* Background color */
-  color: yellow; /* Text color */
-  padding: 20px; /* Padding around the container */
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: yellow;
+  padding: 20px;
   margin-top: 35px;
-  animation: fadeIn 1.5s ease-in; /* Apply the fade-in animation */
+  animation: fadeIn 1.5s ease-in;
   font-style: italic;
-  }
+}
 
 .Title {
+  width: 100%; /* Full width of the container */
+  text-align: center; /* Center-align the text */
   margin-bottom: 20px;
 }
 
 .media-container {
-  display: flex; /* Side-by-side layout for photo and video */
-  width: 100%; /* Full width for the media container */
-  justify-content: space-around; /* Evenly space the child elements */
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .photo-container, .video-container {
-  width: 50%; /* Half of the media container's width */
-  margin: 10px; /* Margin around each container */
+  width: 50%;
+  margin: 10px;
 }
 
-.photo-container img, .new-image-container img {
-  width: 100%; /* Full width of their respective containers */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Prevent distortion */
-  box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7); /* Yellow shadow for images */
-}
-
-.video-container video {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Prevent distortion */
+.photo-container img, .video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
 }
 
-.new-image-container {
-  width: 75%; /* Full width for the new image container */
-  margin-top: 20px; /* Space above the new image */ 
+.image-and-order-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
-/* Styles for the footer can be added here, if necessary */
+.new-image-container {
+  width: 45%;
+  margin-right: 10px;
+  box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
+  margin-left: 30px;
+}
 
-/* Responsive adjustments */
+.new-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.order-button-container {
+  width: 50%; /* Match the width with the video container */
+  display: flex;
+  justify-content: center; /* Center the button within the container */
+  align-items: center;
+  margin-left: auto; /* Push the container to the right */
+  margin-right: 10px; /* Same margin as video-container for alignment */ 
+  background-color: black;
+}
+
+.order-button {
+  padding: 45px 85px; /* Increased padding for a larger size */
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black; /* Adding a border */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  border-radius:35px; /* Rounded corners */
+  font-size: 25px; /* Slightly larger font */
+}
+
+.order-button:hover {
+  background-color: orange;
+  color: white; /* Change text color on hover for contrast */
+  box-shadow: 0px 12px 20px -3px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
 @media (max-width: 768px) {
-  .media-container {
-    flex-direction: column; /* Stack photo and video vertically on smaller screens */
+  .media-container, .image-and-order-container {
+    flex-direction: column;
   }
 
-  .photo-container, .video-container, .new-image-container {
-    width: 100%; /* Full width for each container on smaller screens */
+  .photo-container, .video-container, .new-image-container, .order-button-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .order-button {
+    padding: 12px 25px;
   }
 }
