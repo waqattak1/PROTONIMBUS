@@ -1,42 +1,71 @@
-/* Order.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  /* Consider adding height: 100%; for html and body if needed */
+}
 
-.order-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
- 
-  
-  .order-video {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
-  }
-  
-  .order-button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .order-button {
-    background-color: yellow;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .order-button:hover {
-    background-color: orange;
-  }
-  
+.corporate-clients-container {
+  color: yellow; /* Adjust the color as needed */
+  padding: 20px;
+  width: 80%; /* Adjust the width as needed */
+  margin: auto; /* Centering horizontally and vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align child elements */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message-container {
+  margin-bottom: 20px;
+}
+
+.form-container {
+  width: 60%; /* Adjust width as needed */
+  margin-top: 20px; /* Adjusted margin top */
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  box-shadow: 0px 20px 15px -5px rgba(255, 255, 0, 0.7);
+}
+
+.form-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 50%;
+  margin-left: 150px;
+}
+
+.form-field label {
+  width: 25%; /* Adjust the width as needed */
+  text-align: right;
+  margin-right: 10px;
+}
+
+.form-field input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%; /* Adjust the width as needed */
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: yellow;
+  color: orangered;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px; /* Ensure there's space above the button */
+  margin-left: 160px;
+}
+
+.submit-button:hover {
+  background-color: orange;
+}
