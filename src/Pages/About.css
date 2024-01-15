@@ -32,6 +32,7 @@
 .photo-container, .video-container {
   width: 50%;
   margin: 10px;
+
 }
 
 .photo-container img, .video-container video {
@@ -39,6 +40,7 @@
   height: auto;
   object-fit: contain;
   box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
+  border-radius: 25px;
 }
 
 .image-and-order-container {
@@ -54,12 +56,15 @@
   margin-right: 10px;
   box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
   margin-left: 30px;
+  border-radius: 35px;
+  
 }
 
 .new-image-container img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 25px;
 }
 
 .order-button-container {
@@ -84,6 +89,7 @@
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
   border-radius:35px; /* Rounded corners */
   font-size: 25px; /* Slightly larger font */
+  box-shadow: 0px 15px 20px -5px rgba(255, 255, 0, 0.7);
 }
 
 .order-button:hover {

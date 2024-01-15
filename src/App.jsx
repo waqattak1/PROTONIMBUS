@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Pages/Main';
 import About from './Pages/About';
 import Navbar from './Components/Navbar';
-import Order from './Pages/Order';
+import Order from './Pages/CorporateClients';
+import CorporateClients from './Pages/CorporateClients';
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Main />} /> {/* About as the main page */}
-          <Route path="/home" element={<About />} /> {/* Main as the secondary page */}
-          <Route path="/Order" element={<Order />} /> {/* Main as the secondary page */}
+          <Route path="/" element={<Main />} /> 
+          <Route path="/home" element={<About />} /> 
+          <Route path="/CorporateClients" element={<CorporateClients />} /> 
         </Routes>
       </div>
     </Router>
