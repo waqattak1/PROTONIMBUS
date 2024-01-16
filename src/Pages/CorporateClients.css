@@ -29,6 +29,8 @@ body, html {
   text-align: center;
   color: yellow; /* Text color */
   box-shadow: 0px 0px 55px 20px rgba(255, 255, 0, 0.7);
+  border:solid;
+
 }
 
 .message-container p {
@@ -40,12 +42,13 @@ body, html {
 
 /* Rest of your existing CSS code remains unchanged */
 .form-container {
-  width: 70%;
+  width: 100%;  
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 50px;
   box-shadow: 0px 0px 55px 20px rgba(255, 255, 0, 0.7);
+  border:solid;
 }
 
 .form-field {
@@ -119,3 +122,23 @@ body, html {
     opacity: 1;
   }
 }
+
+/* Add error message styles */
+.error {
+  position: relative;
+}
+
+.error-message {
+  color: yellow;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Add this CSS rule for the asterisk */
+.required-asterisk {
+  color: yellow; /* Set the color you prefer */
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
