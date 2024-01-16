@@ -28,7 +28,7 @@ body, html {
   padding: 20px;
   text-align: center;
   color: yellow; /* Text color */
-  box-shadow: 0px 20px 15px -5px rgba(255, 255, 0, 0.7);
+  box-shadow: 0px 0px 55px 20px rgba(255, 255, 0, 0.7);
 }
 
 .message-container p {
@@ -45,14 +45,15 @@ body, html {
   display: flex;
   flex-direction: column;
   border-radius: 50px;
-  box-shadow: 0px 20px 15px -5px rgba(255, 255, 0, 0.7);
+  box-shadow: 0px 0px 55px 20px rgba(255, 255, 0, 0.7);
 }
 
 .form-field {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   width: 100%; /* Adjusted width for the form fields */
   padding: 0 20px; /* Added padding to the form fields */
 }
@@ -95,6 +96,7 @@ body, html {
   margin-left: auto; /* Remove this line */
   margin-right: auto; /* Add this line to center the button */
   display: block; /* Add this line to make it a block-level element for centering */
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 0, 0.7);
 }
 
 /* Styles for the disabled submit button */
