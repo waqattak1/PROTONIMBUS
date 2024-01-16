@@ -43,10 +43,16 @@ const CorporateClients = () => {
             </div>
             <div className="form-field">
               <label htmlFor="phone">Phone Number:</label>
-              <input type="tel" id="phone" name="phone" disabled={isSubmitted} />
+              <div className="phone-input">
+                <input type="tel" id="phone1" name="phone1" maxLength="3" disabled={isSubmitted} />
+                <span className="divider">-</span>
+                <input type="tel" id="phone2" name="phone2" maxLength="3" disabled={isSubmitted} />
+                <span className="divider">-</span>
+                <input type="tel" id="phone3" name="phone3" maxLength="4" disabled={isSubmitted} />
+              </div>
             </div>
             <div className="form-field">
-              <button type="submit" className="submit-button" disabled={isSubmitted}>Submit</button>
+              <button type="submit" className={`submit-button ${isSubmitted ? 'disabled' : ''}`} disabled={isSubmitted}>Submit</button>
             </div>
           </form>
           {submissionMessage && <div className="submission-message">{submissionMessage}</div>}
