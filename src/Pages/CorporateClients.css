@@ -4,7 +4,7 @@ body, html {
   padding: 0;
 }
 
-/* Styles for the container */
+/* Styles for the container with fade-in effect */
 .corporate-clients-container {
   color: yellow;
   padding: 20px;
@@ -17,6 +17,7 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fadeIn 1.5s ease-in; /* Add the fade-in animation to the container */
 }
 
 /* Modify the CSS for the message-container */
@@ -26,7 +27,6 @@ body, html {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
   color: yellow; /* Text color */
   box-shadow: 0px 20px 15px -5px rgba(255, 255, 0, 0.7);
 }
@@ -38,7 +38,7 @@ body, html {
   margin: 0 auto;
 }
 
-
+/* Rest of your existing CSS code remains unchanged */
 .form-container {
   width: 70%;
   margin-top: 20px;
@@ -106,4 +106,14 @@ body, html {
 
 .submit-button:hover {
   background-color: orange;
+}
+
+/* Add the fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
